@@ -4,7 +4,8 @@ These are the exercises we will try to get through during our dojo coding sessio
 
 ## General guidelines
 
-- Avoid using AI to generate your code. This limits how much of it you understand when finished.
+- Look up the resource type needed in [AzureRM Provider Docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) and work from there.
+- If you have Hashicorp Terraform extension in VSCode you can enable [code completion](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform#code-completion).
 - There are pre-created users for you to authenticate to the lab.
 - The lab allows only creation of the resources mentioned in this exercise.
 - Please avoid creation of extremes (such as many VMs or databases). The lab is not free.
