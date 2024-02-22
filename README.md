@@ -13,6 +13,8 @@ These are the exercises we will try to get through during our dojo coding sessio
 - All resources created in the lab environment will be forcefully deleted end of working day 2024-02-24.
 - **Absolutely no bitcoin mining or any other shenanigans! Microsoft detects this and blocks the Azure tenant without notice.**
 - Use git for version control if you want, this is not covered in our workshop.
+- In all tasks you can, and should, use some form of formatting tool. This can either be [autoformat](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform#formatting) or manually with `terraform fmt`.
+- In all tasks you should try `terraform validate` before plan and apply to see that you have the syntax correct.
 
 You can find solutions [here](https://github.com/torivara/dojo-terraform-solutions) some time during the workshop (not immediately).
 
