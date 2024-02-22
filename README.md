@@ -48,6 +48,20 @@ You can find solutions [here](https://github.com/torivara/dojo-terraform-solutio
 
 ### Exercise 3: Creating a Resource Group and a virtual network (local state)
 
+You need to log in for this exercise. Use the provided service principal credentials with the following cli command:
+
+- *Replace myServicePrincipalId with appId*
+- *Replace myServicePrincipalPassword with password*
+
+```bash
+az login --service-principal \
+         --username myServicePrincipalId \
+         --password myServicePrincipalPassword \
+         --tenant myOrganizationTenantID
+```
+
+You also have access to a portal user if you want to view changes there. This user only has reader access on the subscription and in Entra ID. Log in with credentials provided [here](https://portal.azure.com) in a private or incognito browser window.
+
 **Objective**: Use Terraform to create an [Azure Resource Group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group), and create a [Virtual Network](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network) within the Resource Group.
 
 **Tasks**:
