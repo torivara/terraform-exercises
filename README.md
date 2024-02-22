@@ -73,7 +73,7 @@ az login --service-principal \
          --tenant myOrganizationTenantID
 ```
 
-You also have access to a portal user if you want to view changes there. This user only has reader access on the subscription and in Entra ID. Log in with credentials provided [here](https://portal.azure.com) in a private or incognito browser window.
+You also have access to a portal user if you want to view changes there. This user only has reader access on the subscription and in Entra ID. Log in [here](https://portal.azure.com) with credentials provided. Remember to use private or incognito browser window.
 
 **Objective**: Use Terraform to create an [Azure Resource Group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group), and create a [Virtual Network](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network) within the Resource Group.
 
