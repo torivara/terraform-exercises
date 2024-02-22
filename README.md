@@ -16,7 +16,7 @@ These are the exercises we will try to get through during our dojo coding sessio
 
 You can find solutions [here](https://github.com/torivara/dojo-terraform-solutions) some time during the workshop (not immediately).
 
-### Exercise 1: Setting Up Your Environment (local state)
+### Exercise 0: Setting Up Your Environment (local state)
 
 **Objective**: Install prerequisites and configure it to use the AzureRM provider.
 
@@ -24,12 +24,23 @@ You can find solutions [here](https://github.com/torivara/dojo-terraform-solutio
 1. Install Terraform on your machine (required for running Terraform actions).
 2. Install Azure CLI on your machine (required for authenticating Terraform to Azure).
 3. Install Hashicorp Terraform extension in VSCode.
-4. Configure your Terraform and provider version constraints with a `version.tf` file.
-5. Configure Terraform to use the [AzureRM provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) by creating a `provider.tf` file.
+4. Create a folder for your Terraform project (c:\terraform\dojo-coding) or something similar. Avoid using spaces in the name as this can cause issues.
+5. Configure your Terraform and provider terraform and provider versions with a `version.tf` file.
+6. Configure Terraform to use the [AzureRM provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) by creating a `provider.tf` file.
 7. Initialize your Terraform configuration.
+8. Run terraform plan and apply to see if there are changes needed and the config is valid.
 
-- **Hint**: Use the Terraform documentation to find the syntax for declaring providers and initializing configurations.
+- **Hint**: Use the Terraform documentation to find the syntax for declaring providers and [version constraints](https://developer.hashicorp.com/terraform/language/expressions/version-constraints).
+- **Hint**: Use the [documentation](https://developer.hashicorp.com/terraform/language/settings#specifying-provider-requirements) to find how this is configured.
 - **Hint**: Use winget (or another package manager) to install Terraform and Azure CLI. This simplifies future software updates.
+
+### Exercise 1: Basic generic tasks
+
+Do these exercises if you are not familiar with Terraform to get a feel for the syntax.
+
+**Objective**: Getting to know functions, expressions, variable types.
+
+There are ten tasks defined [here](https://github.com/torivara/dojo-terraform/blob/main/01-basic-generic-tasks/exercises.md). Do them at your own pace, and if you feel like getting to know the HCL syntax before starting some resource creation in Azure.
 
 ### Exercise 2: Defining Variables, Locals, and Outputs (local state)
 
