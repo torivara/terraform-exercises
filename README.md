@@ -66,7 +66,7 @@ You need to log in for this exercise. Use the provided service principal credent
 - *Replace myServicePrincipalId with appId*
 - *Replace myServicePrincipalPassword with password*
 
-```bash
+```powershell
 az login --service-principal \
          --username myServicePrincipalId \
          --password myServicePrincipalPassword \
