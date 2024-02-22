@@ -13,7 +13,7 @@ These are the exercises we will try to get through during our dojo coding sessio
 - **Absolutely no bitcoin mining or any other shenanigans! Microsoft detects this and blocks the Azure tenant without notice.**
 - Use git for version control if you want, this is not covered in our workshop.
 
-You can find solutions [here](https://www.google.com).
+You can find solutions [here](https://github.com/torivara/dojo-terraform-solutions) some time during the workshop (not immediately).
 
 ### Exercise 1: Setting Up Your Environment (local state)
 
