@@ -134,11 +134,10 @@ You can find solutions [here](https://www.google.com).
 **Tasks**:
 1. Define a NSG resource with security rules in Terraform.
 2. The NSG should allow HTTPS, SSH and RDP from your client ip to the entire subnet range.
-3. Define the [NSG rules](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) with a map of objects.
+3. Define the NSG rules with a map of objects.
 4. Associate the NSG with one or more subnets from Exercise 5.
 5. Apply your configuration.
 
-- **Hint**: Security rules should not be defined within the NSG resource block. Use the NSG rule resource with for_each.
 - **Hint**: Use [dynamic blocks](https://developer.hashicorp.com/terraform/language/expressions/dynamic-blocks) for your NSG rules.
 - **Hint**: Get your public ip `curl api.ipify.org` or `(invoke-webrequest api.ipify.org).content`
 
