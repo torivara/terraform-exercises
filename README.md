@@ -18,9 +18,11 @@ These are the exercises we will try to get through during our dojo coding sessio
 
 You can find solutions [here](https://github.com/torivara/dojo-terraform-solutions) some time during the workshop (not immediately).
 
-### Exercise 0: Setting Up Your Environment (local state)
+### Prerequisites
 
-**Objective**: Install prerequisites and configure it to use the AzureRM provider.
+**Objective**: Install software and create needed resources
+
+Exercise [here](/00-prerequisites/)
 
 ### Exercise 1: Basic generic tasks
 

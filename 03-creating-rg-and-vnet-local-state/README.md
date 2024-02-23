@@ -1,18 +1,6 @@
-### Exercise 3: Creating a Resource Group and a virtual network (local state)
+# Exercise 3: Creating a Resource Group and a virtual network (local state)
 
-You need to log in for this exercise. Use the provided service principal credentials with the following cli command:
-
-- *Replace myServicePrincipalId with appId*
-- *Replace myServicePrincipalPassword with password*
-
-```powershell
-az login --service-principal \
-         --username myServicePrincipalId \
-         --password myServicePrincipalPassword \
-         --tenant myOrganizationTenantID
-```
-
-You also have access to a portal user if you want to view changes there. This user only has reader access on the subscription and in Entra ID. Log in [here](https://portal.azure.com) with credentials provided. Remember to use private or incognito browser window.
+You need to log in for this exercise. Log in with a regular user or with a service principal. Process described below.
 
 **Objective**: Use Terraform to create an [Azure Resource Group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group), and create a [Virtual Network](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network) within the Resource Group.
 
@@ -27,3 +15,39 @@ You also have access to a portal user if you want to view changes there. This us
 - **Hint**: Refer to the AzureRM provider documentation for the syntax to create a resource group.
 - **Hint**: Terraform validation for variables documentation [here](https://developer.hashicorp.com/terraform/language/values/variables#custom-validation-rules)
 - **Hint**: Look into the AzureRM Virtual Network resource documentation.
+
+## User login
+
+When logging in as a regular user, you can use the az login both with terraform and terraform remote backend.
+
+Login with the below command, and you will be prompted in a separate browser window for login credentials, or just accept if you are already authenticated.
+
+```powershell
+az login
+```
+
+## Service principal login
+
+Service principal login with az login is not supported when using remote backend. This is only possible with a regular user. Therefore you must [authenticate with environment variables](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret#configuring-the-service-principal-in-terraform).
+
+Replace the values below with values from your credentials as created in prerequisites step of this lab.
+
+Windows/PowerShell
+
+```powershell
+# PowerShell
+$env:ARM_CLIENT_ID = "00000000-0000-0000-0000-000000000000"
+$env:ARM_CLIENT_SECRET = "12345678-0000-0000-0000-000000000000"
+$env:ARM_TENANT_ID = "10000000-0000-0000-0000-000000000000"
+$env:ARM_SUBSCRIPTION_ID = "20000000-0000-0000-0000-000000000000"
+```
+
+Linux/Mac/Bash/Zsh
+
+```bash
+# sh
+export ARM_CLIENT_ID="00000000-0000-0000-0000-000000000000"
+export ARM_CLIENT_SECRET="12345678-0000-0000-0000-000000000000"
+export ARM_TENANT_ID="10000000-0000-0000-0000-000000000000"
+export ARM_SUBSCRIPTION_ID="20000000-0000-0000-0000-000000000000"
+```

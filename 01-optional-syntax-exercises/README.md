@@ -1,4 +1,4 @@
-# Basic tasks
+# Optional syntax exercises
 
 Here are some generic basic tasks to perform if you want to get to know Terraform syntax and language specific features.
 
