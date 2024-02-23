@@ -18,17 +18,10 @@ These are the exercises we will try to get through during our dojo coding sessio
 
 You can find solutions [here](https://github.com/torivara/dojo-terraform-solutions) some time during the workshop (not immediately).
 
-### Prerequisites
-
-**Objective**: Install software and create needed resources
-
-Exercise [here](/00-prerequisites/)
-
-### Exercise 1: Basic generic tasks
-
-Do these exercises if you are not familiar with Terraform to get a feel for the syntax.
-
-**Objective**: Getting to know functions, expressions, variable types.
+- [Prerequisites]((/00-prerequisites/))
+  - **Objective**: Install software and create needed resources
+- [Exercise 1: Optional exercises](/01-optional-syntax-exercises/)
+  - **Objective**: Getting to know functions, expressions, variable types.
 
 There are ten tasks defined [here](https://github.com/torivara/dojo-terraform/blob/main/01-basic-generic-tasks/exercises.md). Do them at your own pace, and if you feel like getting to know the HCL syntax before starting some resource creation in Azure.
 
