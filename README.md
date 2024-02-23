@@ -16,7 +16,9 @@ These are the exercises we will try to get through during our dojo coding sessio
 - In all tasks you can, and should, use some form of formatting tool. This can either be [autoformat](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform#formatting) or manually with `terraform fmt`.
 - In all tasks you should try `terraform validate` before plan and apply to see that you have the syntax correct.
 
-You can find solutions [here](https://github.com/torivara/dojo-terraform-solutions) some time during the workshop (not immediately).
+Solutions will be provided halfway through the workshop.
+
+## Exercises
 
 - [Prerequisites](/00-prerequisites/)
   - **Objective**: Install software and create needed resources
@@ -25,22 +27,22 @@ You can find solutions [here](https://github.com/torivara/dojo-terraform-solutio
 - [Exercise 2: Defining Variables, Locals, and Outputs](/02-variables-locals-outputs/)
   - **Objective**: Learn to declare variables, locals, and outputs.
 - [Exercise 3: Creating a Resource Group and a virtual network](/03-creating-rg-and-vnet/)
-  - **Objective**: Use Terraform to create an [Azure Resource Group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group), and create a [Virtual Network](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network) within the Resource Group.
+  - **Objective**: Use Terraform to create an Azure Resource Group, and create a Virtual Network within the Resource Group.
 - [Exercise 4: Moving the state](/04-move-state/)
   - **Objective**: Move the state from locally on your client to remotely on Azure Storage Account
 - [Exercise 5: Subnets Creation](/05-subnets-creation/)
-  - **Objective**: Create more [subnets](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/subnet) within your Virtual Network.
+  - **Objective**: Create more subnets within your Virtual Network.
 - [Exercise 6: Deploying an Azure Key Vault](/06-deploying-azure-keyvault/)
-  - **Objective**: Deploy an [Azure Key Vault](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault) for secret storage. You should always store secrets in a secure vault.
+  - **Objective**: Deploy an Azure Key Vault for secret storage. You should always store secrets in a secure vault.
 - [Exercise 7: Deploying an Azure VM](/07-deploying-azure-vm/)
   - **Objective**: Deploy an Azure Virtual Machine (with public IP address).
 - [Exercise 8: Implementing Azure SQL Database](/08-implement-azure-sql-database/)
-  - **Objective**: Create an [Azure SQL Database](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mssql_database) instance.
+  - **Objective**: Create an Azure SQL Database instance.
 - [Exercise 9: Network Security Group and Rules](/09-create-nsg-with-rules/)
-  - **Objective**: Implement a [Network Security Group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_group) (NSG) with security rules.
+  - **Objective**: Implement a Network Security Group (NSG) with security rules.
 - [Exercise 10: Create a module](/10-create-a-module/)
   - **Objective**: Create a module out of one of the previous resources you made.
 - [Exercise 11: Adding Application Gateway](/11-add-application-gateway/)
-  - **Objective**: Set up an [Application Gateway](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/application_gateway) to route traffic to your VM.
+  - **Objective**: Set up an Application Gateway to route traffic to your VM.
 - [Exercise 12: Advanced optional exercises](/12-advanced-optional-exercises/)
   - **Objective**: More advanced exercises for those that are done with the previous deployment tasks.
