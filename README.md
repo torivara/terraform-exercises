@@ -1,4 +1,4 @@
-# Exercises for Dojo coding session 2024-02-22
+# Exercises for Introduction to Terraform
 
 These are the exercises we will try to get through during our dojo coding session.
 
@@ -6,15 +6,8 @@ These are the exercises we will try to get through during our dojo coding sessio
 
 - Look up the resource type needed in [AzureRM Provider Docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) and work from there.
 - If you have Hashicorp Terraform extension in VSCode you can enable [code completion](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform#code-completion).
-- There are pre-created users for you to authenticate to the lab.
-- The lab allows only creation of the resources mentioned in this exercise.
-- Please avoid creation of extremes (such as many VMs or databases). The lab is not free.
-- Users will be deactivated end of working day 2024-02-24.
-- All resources created in the lab environment will be forcefully deleted end of working day 2024-02-24.
-- **Absolutely no bitcoin mining or any other shenanigans! Microsoft detects this and blocks the Azure tenant without notice.**
 - Use git for version control if you want, this is not covered in our workshop.
 - In all tasks you can, and should, use some form of formatting tool. This can either be [autoformat](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform#formatting) or manually with `terraform fmt`.
-- In all tasks you should try `terraform validate` before plan and apply to see that you have the syntax correct.
 
 Solutions will be provided halfway through the workshop.
 
